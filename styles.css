@@ -15,7 +15,7 @@ html, body {
 }
 
 img {
-    transition: 200ms;
+  transition: 200ms;
 }
 
 img:hover {
