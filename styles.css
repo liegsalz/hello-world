@@ -102,12 +102,12 @@ img:hover {
   position: absolute;
   bottom: 0;
   width:  99.5%;
-  height: 3vh;
-  line-height: 2.7vh;
+  height: 2vh;
+  line-height: 2vh;
   background-color: darkslategrey;
   text-align: left;  
   padding: 0 0 0 0.5%;
   color: white;
-  font-size: 2vh;
+  font-size: 1vh;
   font-weight: 100;
 }
