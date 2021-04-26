@@ -1,17 +1,126 @@
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+}
+
 * {
-  margin:0px;
-  padding:0px;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+img {
+    transition: 200ms;
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+img:hover {
+  height: 105%;
+  transition: 200ms;
 }
+
+.header {
+  background: #334e33;
+  padding:2% 3% 2% 1%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  vertical-align: middle;
+  line-height: 5vh;
+}
+
+.navlinks>.item {
+  display: inline-block;
+  font-weight: 200;
+  font-size: 2.2vw;
+  margin: 0 4vw;
+}
+
+.navlinks>.item:last-child {
+  margin-right: 0;
+  border-right: none;
+}
+
+.navlinks a {
+  color: #b6b6b6;
+  transition: 0.3s;
+}
+
+.navlinks {
+  position: relative;
+}
+
+.navlinks a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.navlinks>.divider {
+  border-left: 2px solid #293f29;
+  position: absolute;
+  height: 130%;
+  top: -15%;
+}
+
+.divider1 {
+  left: 32%
+ }
+
+ .divider2 {
+  left: 61%
+ }
+
+ .divider3 {
+  left: 87%
+ }
+
+
+.logo {
+  border: none;
+  margin: 0;
+  size: auto;
+}
+
+.workspace {
+  height: 85vh;
+  background-color: #dcead6;
+  display: flex;
+ }
+
+
+.container:hover {
+  transition: 100ms;
+  width: 65.5vw;
+  height: 60.5vh;
+}
+
+.container {
+  transition: 200ms;
+  position: relative;
+  background-color: #799f7a;
+  width: 65vw;
+  height: 60vh;
+  margin: auto auto;
+  border-radius: 50px;
+  box-shadow: 0 0 3px black;
+}
+
+.footer {
+  height: 3vh;
+  line-height: 2.7vh;
+  background-color: darkslategrey;
+  text-align: left;  
+  padding: 0 0 0 0.5%;
+  color: white;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+
+
+
