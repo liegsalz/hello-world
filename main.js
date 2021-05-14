@@ -306,7 +306,7 @@ function AppComponent_app_help_8_Template(rf, ctx) { if (rf & 1) {
 } }
 class AppComponent {
     constructor() {
-        this.page = "forms";
+        this.page = "home";
         this.title = 'bems';
     }
     ;
