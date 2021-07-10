@@ -294,7 +294,7 @@ function InputTableComponent_td_4_Template(rf, ctx) { if (rf & 1) {
 } }
 function InputTableComponent_th_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "th", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Beh\u00F6rdennummer");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Dienststellennummer");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 } }
 function InputTableComponent_td_7_Template(rf, ctx) { if (rf & 1) {
@@ -304,7 +304,7 @@ function InputTableComponent_td_7_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const row_r20 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate"](row_r20.behoerdennummer);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate"](row_r20.dienststellennummer);
 } }
 function InputTableComponent_th_9_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "th", 24);
@@ -404,7 +404,7 @@ class InputTableComponent {
     constructor(http) {
         this.http = http;
         /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-        this.displayedColumns = ['datum', 'behoerdennummer', 'abflugort', 'ankunftsort', 'befoerderungsklasse', 'personenAnzahl', 'emissionen', 'select'];
+        this.displayedColumns = ['datum', 'dienststellennummer', 'abflugort', 'ankunftsort', 'befoerderungsklasse', 'personenAnzahl', 'emissionen', 'select'];
         this.selection = new _angular_cdk_collections__WEBPACK_IMPORTED_MODULE_4__["SelectionModel"](true, []);
         this.dataSource = new _input_table_datasource__WEBPACK_IMPORTED_MODULE_3__["InputTableDataSource"]();
     }
@@ -419,7 +419,7 @@ class InputTableComponent {
                 tempData.push({
                     id: elem.id,
                     datum: elem.startingDate,
-                    behoerdennummer: elem.authorityNumber,
+                    dienststellennummer: elem.authorityNumber,
                     abflugort: elem.iataStart,
                     ankunftsort: elem.iataDest,
                     befoerderungsklasse: elem.travelClass.toUpperCase(),
@@ -461,7 +461,7 @@ class InputTableComponent {
         if (!row) {
             return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
         }
-        return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.behoerdennummer + 1}`;
+        return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.dienststellennummer + 1}`;
     }
     deleteSelected() {
         console.log(this.selection.selected);
@@ -491,7 +491,7 @@ InputTableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵloadQuery"]()) && (ctx.paginator = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵloadQuery"]()) && (ctx.sort = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵloadQuery"]()) && (ctx.table = _t.first);
-    } }, decls: 42, vars: 8, consts: [[1, "mat-elevation-z8", "data-table"], ["mat-table", "", "matSort", "", "aria-label", "Elements", 1, "full-width-table"], ["matColumnDef", "datum"], ["mat-header-cell", "", "mat-sort-header", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "behoerdennummer"], ["matColumnDef", "abflugort"], ["matColumnDef", "ankunftsort"], ["matColumnDef", "befoerderungsklasse"], ["matColumnDef", "personenAnzahl"], ["matColumnDef", "emissionen"], ["matColumnDef", "select"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], [1, "selectAll"], [3, "checked", "indeterminate", "aria-label", "change"], [3, "length", "pageIndex", "pageSize"], ["paginator", ""], [1, "save"], ["mat-raised-button", "", 3, "click"], [1, "delete"], [1, "update", 3, "click"], ["mat-raised-button", ""], ["mat-header-cell", "", "mat-sort-header", ""], ["mat-cell", ""], ["mat-header-cell", ""], [3, "checked", "aria-label", "click", "change"], ["mat-header-row", ""], ["mat-row", ""]], template: function InputTableComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 42, vars: 8, consts: [[1, "mat-elevation-z8", "data-table"], ["mat-table", "", "matSort", "", "aria-label", "Elements", 1, "full-width-table"], ["matColumnDef", "datum"], ["mat-header-cell", "", "mat-sort-header", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "dienststellennummer"], ["matColumnDef", "abflugort"], ["matColumnDef", "ankunftsort"], ["matColumnDef", "befoerderungsklasse"], ["matColumnDef", "personenAnzahl"], ["matColumnDef", "emissionen"], ["matColumnDef", "select"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], [1, "selectAll"], [3, "checked", "indeterminate", "aria-label", "change"], [3, "length", "pageIndex", "pageSize"], ["paginator", ""], [1, "save"], ["mat-raised-button", "", 3, "click"], [1, "delete"], [1, "update", 3, "click"], ["mat-raised-button", ""], ["mat-header-cell", "", "mat-sort-header", ""], ["mat-cell", ""], ["mat-header-cell", ""], [3, "checked", "aria-label", "click", "change"], ["mat-header-row", ""], ["mat-row", ""]], template: function InputTableComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](1, "table", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerStart"](2, 2);
@@ -1244,7 +1244,7 @@ function DashboardTableComponent_td_4_Template(rf, ctx) { if (rf & 1) {
 } }
 function DashboardTableComponent_th_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "th", 23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, "Beh\u00F6rdennummer");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, "Dienststellennummer");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } }
 function DashboardTableComponent_td_7_Template(rf, ctx) { if (rf & 1) {
@@ -1254,7 +1254,7 @@ function DashboardTableComponent_td_7_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const row_r19 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](row_r19.behoerdennummer);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate"](row_r19.dienststellennummer);
 } }
 function DashboardTableComponent_th_9_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "th", 23);
@@ -1339,7 +1339,7 @@ class DashboardTableComponent {
         this.http = http;
         this.dataSource = new _dashboard_table_datasource__WEBPACK_IMPORTED_MODULE_3__["DashboardTableDataSource"]();
         /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-        this.displayedColumns = ['datum', 'behoerdennummer', 'abflugort', 'ankunftsort', 'befoerderungsklasse', 'personenAnzahl', 'emissionen'];
+        this.displayedColumns = ['datum', 'dienststellennummer', 'abflugort', 'ankunftsort', 'befoerderungsklasse', 'personenAnzahl', 'emissionen'];
         this.csvRecords = [];
         this.importedFile = null;
     }
@@ -1358,7 +1358,7 @@ class DashboardTableComponent {
             data.data.forEach(elem => {
                 tempData.push({
                     datum: elem.startingDate,
-                    behoerdennummer: elem.authorityNumber,
+                    dienststellennummer: elem.authorityNumber,
                     abflugort: elem.iataStart,
                     ankunftsort: elem.iataDest,
                     befoerderungsklasse: elem.travelClass.toUpperCase(),
@@ -1423,7 +1423,7 @@ DashboardTableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.sort = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.table = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.fileImportInput = _t.first);
-    } }, decls: 38, vars: 7, consts: [[1, "mat-elevation-z8", "data-table"], ["mat-table", "", "matSort", "", "aria-label", "Elements", 1, "full-width-table"], ["matColumnDef", "datum"], ["mat-header-cell", "", "mat-sort-header", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "behoerdennummer"], ["matColumnDef", "abflugort"], ["matColumnDef", "ankunftsort"], ["matColumnDef", "befoerderungsklasse"], ["matColumnDef", "personenAnzahl"], ["matColumnDef", "emissionen"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], [3, "length", "pageIndex", "pageSize", "pageSizeOptions"], ["paginator", ""], [1, "utility"], [1, "left"], ["type", "file", "accept", ".csv", 1, "select", 3, "change"], ["fileImportInput", ""], [1, "right"], ["mat-raised-button", "", 1, "import", 3, "click"], ["mat-raised-button", "", "type", "submit", "onclick", "window.open('http://localhost:8080/api/file/download')", 1, "export"], ["mat-raised-button", "", 3, "click"], ["mat-header-cell", "", "mat-sort-header", ""], ["mat-cell", ""], ["mat-header-row", ""], ["mat-row", ""]], template: function DashboardTableComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 38, vars: 7, consts: [[1, "mat-elevation-z8", "data-table"], ["mat-table", "", "matSort", "", "aria-label", "Elements", 1, "full-width-table"], ["matColumnDef", "datum"], ["mat-header-cell", "", "mat-sort-header", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "dienststellennummer"], ["matColumnDef", "abflugort"], ["matColumnDef", "ankunftsort"], ["matColumnDef", "befoerderungsklasse"], ["matColumnDef", "personenAnzahl"], ["matColumnDef", "emissionen"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], [3, "length", "pageIndex", "pageSize", "pageSizeOptions"], ["paginator", ""], [1, "utility"], [1, "left"], ["type", "file", "accept", ".csv", 1, "select", 3, "change"], ["fileImportInput", ""], [1, "right"], ["mat-raised-button", "", 1, "import", 3, "click"], ["mat-raised-button", "", "type", "submit", "onclick", "window.open('http://localhost:8080/api/file/download')", 1, "export"], ["mat-raised-button", "", 3, "click"], ["mat-header-cell", "", "mat-sort-header", ""], ["mat-cell", ""], ["mat-header-row", ""], ["mat-row", ""]], template: function DashboardTableComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](1, "table", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerStart"](2, 2);
@@ -1596,7 +1596,7 @@ class DashboardTableDataSource extends _angular_cdk_collections__WEBPACK_IMPORTE
             const isAsc = ((_a = this.sort) === null || _a === void 0 ? void 0 : _a.direction) === 'asc';
             switch ((_b = this.sort) === null || _b === void 0 ? void 0 : _b.active) {
                 case 'datum': return compare(a.datum, b.datum, isAsc);
-                case 'behoerdennummer': return compare(+a.behoerdennummer, +b.behoerdennummer, isAsc);
+                case 'dienststellennummer': return compare(+a.dienststellennummer, +b.dienststellennummer, isAsc);
                 case 'abflugort': return compare(+a.abflugort, +b.abflugort, isAsc);
                 case 'ankunftsort': return compare(+a.ankunftsort, +b.ankunftsort, isAsc);
                 case 'befoerderungsklasse': return compare(+a.befoerderungsklasse, +b.befoerderungsklasse, isAsc);
@@ -2059,7 +2059,7 @@ class InputTableDataSource extends _angular_cdk_collections__WEBPACK_IMPORTED_MO
             const isAsc = ((_a = this.sort) === null || _a === void 0 ? void 0 : _a.direction) === 'asc';
             switch ((_b = this.sort) === null || _b === void 0 ? void 0 : _b.active) {
                 case 'datum': return compare(a.datum, b.datum, isAsc);
-                case 'behoerdennummer': return compare(+a.behoerdennummer, +b.behoerdennummer, isAsc);
+                case 'dienststellennummer': return compare(+a.dienststellennummer, +b.dienststellennummer, isAsc);
                 case 'abflugort': return compare(+a.abflugort, +b.abflugort, isAsc);
                 case 'ankunftsort': return compare(+a.ankunftsort, +b.ankunftsort, isAsc);
                 case 'befoerderungsklasse': return compare(+a.befoerderungsklasse, +b.befoerderungsklasse, isAsc);
