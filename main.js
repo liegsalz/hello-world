@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\yobry\Documents\2 .Uni\4_Semester\BEMS\bems\code\frontend\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\Users\yobry\Desktop\bems\code\frontend\src\main.ts */"zUnb");
 
 
 /***/ }),
@@ -85,22 +85,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
 /* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/scrolling */ "vxfF");
 /* harmony import */ var _faq_accordion_faq_accordion_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./faq-accordion/faq-accordion.component */ "XAS7");
-/* harmony import */ var _user_manual_user_manual_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./user-manual/user-manual.component */ "XuBr");
 
 
 
 
-
-function HelpComponent_faq_accordion_10_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "faq-accordion", 9);
-} }
-function HelpComponent_app_user_manual_11_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-user-manual", 10);
-} }
-function HelpComponent_div_12_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Manuel-Video CONTENT");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+function HelpComponent_faq_accordion_6_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "faq-accordion", 5);
 } }
 const _c0 = function (a0) { return { active: a0 }; };
 class HelpComponent {
@@ -112,7 +102,7 @@ class HelpComponent {
     }
 }
 HelpComponent.ɵfac = function HelpComponent_Factory(t) { return new (t || HelpComponent)(); };
-HelpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HelpComponent, selectors: [["app-help"]], decls: 13, vars: 12, consts: [["id", "faq-container"], ["id", "help-menu"], ["id", "faq", 1, "help-menu-item", 3, "ngClass", "click"], ["id", "user-manual", 1, "help-menu-item", 3, "ngClass", "click"], ["id", "manual-video", 1, "help-menu-item", 3, "ngClass", "click"], ["id", "help-content", "itemSize", "2"], ["id", "faq-content", 4, "ngIf"], ["id", "user-manual-content", 4, "ngIf"], ["id", "manual-video-content", 4, "ngIf"], ["id", "faq-content"], ["id", "user-manual-content"], ["id", "manual-video-content"]], template: function HelpComponent_Template(rf, ctx) { if (rf & 1) {
+HelpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HelpComponent, selectors: [["app-help"]], decls: 7, vars: 4, consts: [["id", "faq-container"], ["id", "help-menu"], ["id", "faq", 1, "help-menu-item", 3, "ngClass", "click"], ["id", "help-content", "itemSize", "2"], ["id", "faq-content", 4, "ngIf"], ["id", "faq-content"]], template: function HelpComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "body");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
@@ -120,36 +110,18 @@ HelpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HelpComponent_Template_div_click_3_listener() { return ctx.currentMenuItem = "faq"; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "FAQ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HelpComponent_Template_div_click_5_listener() { return ctx.currentMenuItem = "user-manual"; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "User Manual");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HelpComponent_Template_div_click_7_listener() { return ctx.currentMenuItem = "manual-video"; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Manual Video");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "cdk-virtual-scroll-viewport", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, HelpComponent_faq_accordion_10_Template, 1, 0, "faq-accordion", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, HelpComponent_app_user_manual_11_Template, 1, 0, "app-user-manual", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](12, HelpComponent_div_12_Template, 2, 0, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "cdk-virtual-scroll-viewport", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, HelpComponent_faq_accordion_6_Template, 1, 0, "faq-accordion", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](6, _c0, ctx.currentMenuItem == "faq"));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](8, _c0, ctx.currentMenuItem == "user-manual"));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](10, _c0, ctx.currentMenuItem == "manual-video"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](2, _c0, ctx.currentMenuItem == "faq"));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.currentMenuItem === "faq");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.currentMenuItem === "user-manual");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.currentMenuItem === "manual-video");
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_2__["CdkVirtualScrollViewport"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_2__["CdkFixedSizeVirtualScroll"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _faq_accordion_faq_accordion_component__WEBPACK_IMPORTED_MODULE_3__["FaqAccordionComponent"], _user_manual_user_manual_component__WEBPACK_IMPORTED_MODULE_4__["UserManualComponent"]], styles: ["*[_ngcontent-%COMP%] {\r\n    background-color: rgb(112, 112, 112);\r\n}\r\n\r\n#faq-container[_ngcontent-%COMP%] {\r\n    height: 100vh;\r\n    width: 100vw;\r\n    z-index: -9999;    \r\n    padding: 24px;\r\n    background-color: rgb(112, 112, 112);\r\n}\r\n\r\n#help-menu[_ngcontent-%COMP%] {\r\n    float: left;\r\n    padding: 12px 12px 0px 0px;\r\n    width: 15%;\r\n}\r\n\r\n#help-content[_ngcontent-%COMP%] {\r\n    float: left;\r\n    width: 75%;\r\n    height: 80vh;\r\n    overflow: auto;\r\n}\r\n\r\n.help-menu-item[_ngcontent-%COMP%] {\r\n    cursor: pointer;\r\n    color: rgb(211,211,211);\r\n}\r\n\r\n.help-menu-item[_ngcontent-%COMP%]:hover {\r\n    font-weight: bold;\r\n    color: rgb(255, 255, 255);\r\n}\r\n\r\n.help-menu-item.active[_ngcontent-%COMP%] {\r\n    font-weight: bolder;\r\n    color: rgb(56, 85, 85);\r\n}\r\n\r\n.mat-form-field[_ngcontent-%COMP%]    + .mat-form-field[_ngcontent-%COMP%] {\r\n    margin-left: 8px;\r\n  }\r\n\r\n#faq-content[_ngcontent-%COMP%] {\r\n      width: 100vh;\r\n      height: 100vh;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlbHAuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG9DQUFvQztBQUN4Qzs7QUFFQTtJQUNJLGFBQWE7SUFDYixZQUFZO0lBQ1osY0FBYztJQUNkLGFBQWE7SUFDYixvQ0FBb0M7QUFDeEM7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsMEJBQTBCO0lBQzFCLFVBQVU7QUFDZDs7QUFFQTtJQUNJLFdBQVc7SUFDWCxVQUFVO0lBQ1YsWUFBWTtJQUNaLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0ksaUJBQWlCO0lBQ2pCLHlCQUF5QjtBQUM3Qjs7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSxnQkFBZ0I7RUFDbEI7O0FBRUE7TUFDSSxZQUFZO01BQ1osYUFBYTtFQUNqQiIsImZpbGUiOiJoZWxwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIqIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxMTIsIDExMiwgMTEyKTtcclxufVxyXG5cclxuI2ZhcS1jb250YWluZXIge1xyXG4gICAgaGVpZ2h0OiAxMDB2aDtcclxuICAgIHdpZHRoOiAxMDB2dztcclxuICAgIHotaW5kZXg6IC05OTk5OyAgICBcclxuICAgIHBhZGRpbmc6IDI0cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTEyLCAxMTIsIDExMik7XHJcbn1cclxuXHJcbiNoZWxwLW1lbnUge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDEycHggMHB4IDBweDtcclxuICAgIHdpZHRoOiAxNSU7XHJcbn1cclxuXHJcbiNoZWxwLWNvbnRlbnQge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICB3aWR0aDogNzUlO1xyXG4gICAgaGVpZ2h0OiA4MHZoO1xyXG4gICAgb3ZlcmZsb3c6IGF1dG87XHJcbn1cclxuXHJcbi5oZWxwLW1lbnUtaXRlbSB7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICBjb2xvcjogcmdiKDIxMSwyMTEsMjExKTtcclxufSBcclxuXHJcbi5oZWxwLW1lbnUtaXRlbTpob3ZlciB7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7XHJcbn0gXHJcbi5oZWxwLW1lbnUtaXRlbS5hY3RpdmUge1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcclxuICAgIGNvbG9yOiByZ2IoNTYsIDg1LCA4NSk7XHJcbn0gXHJcblxyXG4ubWF0LWZvcm0tZmllbGQgKyAubWF0LWZvcm0tZmllbGQge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDhweDtcclxuICB9XHJcblxyXG4gICNmYXEtY29udGVudCB7XHJcbiAgICAgIHdpZHRoOiAxMDB2aDtcclxuICAgICAgaGVpZ2h0OiAxMDB2aDtcclxuICB9Il19 */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_2__["CdkVirtualScrollViewport"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_2__["CdkFixedSizeVirtualScroll"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _faq_accordion_faq_accordion_component__WEBPACK_IMPORTED_MODULE_3__["FaqAccordionComponent"]], styles: ["*[_ngcontent-%COMP%] {\r\n    background-color: rgb(112, 112, 112);\r\n}\r\n\r\n#faq-container[_ngcontent-%COMP%] {\r\n    height: 100vh;\r\n    width: 100vw;\r\n    z-index: -9999;    \r\n    padding: 24px;\r\n    background-color: rgb(112, 112, 112);\r\n}\r\n\r\n#help-menu[_ngcontent-%COMP%] {\r\n    float: left;\r\n    padding: 12px 12px 0px 0px;\r\n    width: 15%;\r\n}\r\n\r\n#help-content[_ngcontent-%COMP%] {\r\n    float: left;\r\n    width: 75%;\r\n    height: 80vh;\r\n    overflow: auto;\r\n}\r\n\r\n.help-menu-item[_ngcontent-%COMP%] {\r\n    cursor: pointer;\r\n    color: rgb(211,211,211);\r\n}\r\n\r\n.help-menu-item[_ngcontent-%COMP%]:hover {\r\n    font-weight: bold;\r\n    color: rgb(255, 255, 255);\r\n}\r\n\r\n.help-menu-item.active[_ngcontent-%COMP%] {\r\n    font-weight: bolder;\r\n    color: rgb(56, 85, 85);\r\n}\r\n\r\n.mat-form-field[_ngcontent-%COMP%]    + .mat-form-field[_ngcontent-%COMP%] {\r\n    margin-left: 8px;\r\n  }\r\n\r\n#faq-content[_ngcontent-%COMP%] {\r\n      width: 100vh;\r\n      height: 100vh;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlbHAuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG9DQUFvQztBQUN4Qzs7QUFFQTtJQUNJLGFBQWE7SUFDYixZQUFZO0lBQ1osY0FBYztJQUNkLGFBQWE7SUFDYixvQ0FBb0M7QUFDeEM7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsMEJBQTBCO0lBQzFCLFVBQVU7QUFDZDs7QUFFQTtJQUNJLFdBQVc7SUFDWCxVQUFVO0lBQ1YsWUFBWTtJQUNaLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0ksaUJBQWlCO0lBQ2pCLHlCQUF5QjtBQUM3Qjs7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSxnQkFBZ0I7RUFDbEI7O0FBRUE7TUFDSSxZQUFZO01BQ1osYUFBYTtFQUNqQiIsImZpbGUiOiJoZWxwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIqIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxMTIsIDExMiwgMTEyKTtcclxufVxyXG5cclxuI2ZhcS1jb250YWluZXIge1xyXG4gICAgaGVpZ2h0OiAxMDB2aDtcclxuICAgIHdpZHRoOiAxMDB2dztcclxuICAgIHotaW5kZXg6IC05OTk5OyAgICBcclxuICAgIHBhZGRpbmc6IDI0cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTEyLCAxMTIsIDExMik7XHJcbn1cclxuXHJcbiNoZWxwLW1lbnUge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDEycHggMHB4IDBweDtcclxuICAgIHdpZHRoOiAxNSU7XHJcbn1cclxuXHJcbiNoZWxwLWNvbnRlbnQge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICB3aWR0aDogNzUlO1xyXG4gICAgaGVpZ2h0OiA4MHZoO1xyXG4gICAgb3ZlcmZsb3c6IGF1dG87XHJcbn1cclxuXHJcbi5oZWxwLW1lbnUtaXRlbSB7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICBjb2xvcjogcmdiKDIxMSwyMTEsMjExKTtcclxufSBcclxuXHJcbi5oZWxwLW1lbnUtaXRlbTpob3ZlciB7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7XHJcbn0gXHJcbi5oZWxwLW1lbnUtaXRlbS5hY3RpdmUge1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcclxuICAgIGNvbG9yOiByZ2IoNTYsIDg1LCA4NSk7XHJcbn0gXHJcblxyXG4ubWF0LWZvcm0tZmllbGQgKyAubWF0LWZvcm0tZmllbGQge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDhweDtcclxuICB9XHJcblxyXG4gICNmYXEtY29udGVudCB7XHJcbiAgICAgIHdpZHRoOiAxMDB2aDtcclxuICAgICAgaGVpZ2h0OiAxMDB2aDtcclxuICB9Il19 */"] });
 
 
 /***/ }),
@@ -582,9 +554,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 class FooterComponent {
-    constructor() { }
-    ngOnInit() {
-    }
 }
 FooterComponent.ɵfac = function FooterComponent_Factory(t) { return new (t || FooterComponent)(); };
 FooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], decls: 4, vars: 0, consts: [[1, "footer"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
@@ -614,6 +583,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dashboard_table_dashboard_table_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dashboard-table/dashboard-table.component */ "iXbb");
 
 
+/**
+ * Dashboard component class
+ */
 class DashboardComponent {
 }
 DashboardComponent.ɵfac = function DashboardComponent_Factory(t) { return new (t || DashboardComponent)(); };
@@ -1333,24 +1305,48 @@ function DashboardTableComponent_tr_24_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "tr", 26);
 } }
 const _c1 = function () { return [10]; };
+/**
+ * Class for the table in dashboard
+ */
 class DashboardTableComponent {
+    /**
+     * Injects HttpClient to communication with backend and NgxCsvParser to parse csv-Files
+     */
     constructor(ngxCsvParser, http) {
         this.ngxCsvParser = ngxCsvParser;
         this.http = http;
+        /**
+         * Creates a DataSource for our DashboardTable
+         */
         this.dataSource = new _dashboard_table_datasource__WEBPACK_IMPORTED_MODULE_3__["DashboardTableDataSource"]();
         /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
         this.displayedColumns = ['datum', 'dienststellennummer', 'abflugort', 'ankunftsort', 'befoerderungsklasse', 'personenAnzahl', 'emissionen'];
+        /**
+         * Saves the data uploaded for later import
+         */
         this.csvRecords = [];
+        /**
+         * Saves the status of the imported csv files
+         */
         this.importedFile = null;
     }
+    /**
+     * When initialized the data gets updated
+     */
     ngOnInit() {
         this.updateData();
     }
+    /**
+     * Sets all values after view
+     */
     ngAfterViewInit() {
         this.dataSource.sort = this.sort;
         this.dataSource.paginator = this.paginator;
         this.table.dataSource = this.dataSource;
     }
+    /**
+     * Requests and updates the data in the table
+     */
     updateData() {
         let tempData = [];
         let dataObserver = this.http.get("/api/dashboard");
@@ -1375,6 +1371,7 @@ class DashboardTableComponent {
         console.log(this.table);
     }
     fileChangeListener($event) {
+        let csvRecords = [];
         // Select the files from the event
         const files = $event.srcElement.files;
         // Parse the file you want to select for the operation along with the configuration
@@ -1386,10 +1383,9 @@ class DashboardTableComponent {
             console.log('Error', error);
         });
     }
-    datePrint(date) {
-        let dateString = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
-        return dateString;
-    }
+    /**
+     * Updates the table with the imported data
+     */
     importData() {
         let flights = [];
         this.csvRecords.forEach((element) => {
@@ -1409,6 +1405,13 @@ class DashboardTableComponent {
         console.log(observable);
         this.updateData();
         alert("Data was successfully imported!");
+    }
+    /**
+     * Formats and prints a date (DD/MM/YYYY)
+     */
+    datePrint(date) {
+        let dateString = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+        return dateString;
     }
 }
 DashboardTableComponent.ɵfac = function DashboardTableComponent_Factory(t) { return new (t || DashboardTableComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](ngx_csv_parser__WEBPACK_IMPORTED_MODULE_5__["NgxCsvParser"]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClient"])); };
